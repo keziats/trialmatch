@@ -99,8 +99,9 @@ def test_app_smoke():
 
     at = AppTest.from_file(str(ROOT / "app.py"), default_timeout=30).run()
     assert not at.exception
+    at.switch_page("views/protocol.py").run()  # the protocol step now has its own page
     next(b for b in at.button if b.label == "Use the bundled sample protocol").click().run()
     assert not at.exception
-    next(b for b in at.button if b.label == "Run matching").click().run()
+    next(b for b in at.button if b.label == "Submit").click().run()  # was "Run matching"
     assert not at.exception
-    assert len(at.dataframe) >= 1
+    assert len(at.session_state["results"]) == len(PATIENTS)

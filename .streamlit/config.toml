@@ -1,0 +1,36 @@
+# Neurovation look, shared by every page (including the original protocol-matching page).
+# Theme only: no behaviour changes.
+[theme]
+base = "light"
+primaryColor = "#2A56C6"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F9FB"
+textColor = "#101828"
+linkColor = "#2A56C6"
+borderColor = "#E4E7EC"
+dataframeBorderColor = "#E4E7EC"
+dataframeHeaderBackgroundColor = "#F9FAFB"
+showWidgetBorder = true
+baseRadius = "8px"
+buttonRadius = "8px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFontWeights = [600, 600, 600, 600, 600, 600]
+headingFontSizes = ["2rem", "1.35rem", "1.1rem", "1rem", "0.95rem", "0.9rem"]
+baseFontSize = 14
+metricValueFontWeight = 600
+greenColor = "#067647"
+greenBackgroundColor = "#ECFDF3"
+redColor = "#B42318"
+redBackgroundColor = "#FEF3F2"
+orangeColor = "#B54708"
+orangeBackgroundColor = "#FFFAEB"
+blueColor = "#2A56C6"
+blueBackgroundColor = "#EEF3FE"
+chartCategoricalColors = ["#2A56C6", "#7D9FE8", "#C5D4F6", "#101828"]
+
+[client]
+toolbarMode = "minimal"
+
+[theme.sidebar]
+backgroundColor = "#FFFFFF"
+showSidebarBorder = true
